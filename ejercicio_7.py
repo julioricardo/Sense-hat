@@ -27,8 +27,15 @@ while True:
 		t=round(t,1)
 		p=round(p,1)
 		h=round(h,1)
-		msg="Temp={0},Pres={1},Hum={2}".format(t,p,h)
-		sense.show_message(msg,scroll_speed=0.1)
+		if t > 18 and t < 26:        
+			bg = [0, 100, 0]  # green    
+		else:       
+	 		bg = [100, 0, 0]  # red    
+		msg = "Temperature = {0}, Pressure = {1}, Humidity = {2}".format(t, p, h)   
+ 		sense.show_message(msg, scroll_speed=0.05, back_colour=bg)
+
+		#msg="Temp={0},Pres={1},Hum={2}".format(t,p,h)
+		#sense.show_message(msg,scroll_speed=0.1)
 	except KeyboardInterrupt:
 		sense.clear()
 		sys.exit() 
