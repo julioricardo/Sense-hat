@@ -2,7 +2,7 @@
 
 #Este ejercicio muestra un mensaje en matriz de leds y se puede cambiar la velocidad del texto
 #con la funcin scroll_speed. Adems, el color de fondo y del texto con las funciones back_colour y text_colour.
-#pulsar s para salir
+
 
 from sense_hat import SenseHat
 import sys
