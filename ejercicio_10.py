@@ -1,9 +1,5 @@
 #!/usr/bin/python
 
-
-
-
-
 import time
 import sys
 from sense_hat import SenseHat 
@@ -35,8 +31,3 @@ while True:
 	except KeyboardInterrupt:
 		sense.clear()
 		sys.exit() 
-
-
-
-
-
